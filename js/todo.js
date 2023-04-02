@@ -19,9 +19,14 @@ function display(data) {
         <h3>userId-${todo.userId}</h3>
         <h4>id-${todo.id}</h4>
         <h2>title-${todo.title}</h2>
-        <h4>status-${todo.completed}</h4> 
+        <h4>status-${todo.completed ? 'completed' : 'not completed'}</h4> 
         `
         todolist.appendChild(div)
     }
 }
+//if else shortcut version
+// condition ? true : false
+// : act as else
+// ? act as if innerbody
+//<h4>status-${todo.completed ? 'completed' : 'not completed'}</h4>
 
